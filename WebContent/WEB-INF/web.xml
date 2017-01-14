@@ -3,7 +3,9 @@
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
+
 	<display-name>proxibanquev3</display-name>
+
 	<welcome-file-list>
 		<welcome-file>main.xhtml</welcome-file>
 	</welcome-file-list>
@@ -17,7 +19,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
-		<url-pattern>/faces/*</url-pattern>
+		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
 	<context-param>
 		<description>State saving method: 'client' or 'server' (=default). See
@@ -37,7 +39,7 @@
 		<param-name>primefaces.THEME</param-name>
 		<param-value>bootstrap</param-value>
 	</context-param>
-	<listener>
-		<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
-	</listener>
+	<!--<listener>-->
+		<!--<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>-->
+	<!--</listener>-->
 </web-app>

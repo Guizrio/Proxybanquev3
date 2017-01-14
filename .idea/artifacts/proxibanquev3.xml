@@ -33,6 +33,8 @@
           <element id="library" level="module" name="weld-servlet-2.2.6.Final.jar" module-name="proxibanquev3" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="proxibanquev3/web/Web2" />
+      <element id="javaee-facet-resources" facet="proxibanquev3/web/Web2" />
     </root>
   </artifact>
 </component>
