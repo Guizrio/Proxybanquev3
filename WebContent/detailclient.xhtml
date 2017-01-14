@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<h:outputStylesheet name="css/style.css" />
+	</h:head>
+	<h:body>
+		<ui:composition template="/template/layout.xhtml">
+			<center>
+				<ui:define name="content">
+					<h:panelGrid columns="1">
+						<h:panelGrid columns="2">
+
+							<h:outputText id="id" value="Numéro d'identification:"></h:outputText>
+							<h:outputText id="idclient" value="#{clientbean.client.id}"></h:outputText>
+
+							<h:outputText id="nom" value="Nom:"></h:outputText>
+							<h:outputText id="nomclient" value="#{clientbean.client.nom}"></h:outputText>
+
+							<h:outputText id="prenom" value="Prénom:"></h:outputText>
+							<h:outputText id="prenomclient" value="#{clientbean.client.prenom}"></h:outputText>
+
+							<h:outputText id="email" value="Email:"></h:outputText>
+							<h:outputText id="emailclient" value="#{clientbean.client.email}"></h:outputText>
+
+							<h:outputText id="adresse" value="Adresse:"></h:outputText>
+							<h:outputText id="adresseclient" value="#{clientbean.client.adresse}"></h:outputText>
+
+						</h:panelGrid>
+						<h:panelGrid columns="2">
+							<p:commandButton value="MODIFIER" id="modifierclient"
+								disabled="true" />
+							<p:commandButton value="SUPPRIMER" id="supprimerclient"
+								disabled="true" />
+						</h:panelGrid>
+					</h:panelGrid>
+				</ui:define>
+			</center>
+		</ui:composition>
+	</h:body>
+</f:view>
+</html>
